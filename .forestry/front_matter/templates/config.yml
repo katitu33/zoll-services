@@ -1,275 +1,274 @@
 ---
 label: Config
 hide_body: true
-is_partial: false
 fields:
-  - type: text
-    name: title
-    label: Title
-    config:
-      required: true
-  - type: text
-    name: baseURL
-    label: Base baseURL
-    description: Hostname (and path)  to the root
-  - type: text
-    name: languageCode
-    label: Language Code "en"
-  - type: text
-    name: theme
-    label: Theme Name
-  - type: text
-    name: themesDir
-    label: Themes Folder Path
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
+  name: baseURL
+  label: Base baseURL
+  description: Hostname (and path)  to the root
+- type: text
+  name: languageCode
+  label: Language Code "en"
+- type: text
+  name: theme
+  label: Theme Name
+- type: text
+  name: themesDir
+  label: Themes Folder Path
+- type: field_group
+  name: params
+  label: Site Parameters
+  fields:
   - type: field_group
-    name: params
-    label: Site Parameters
+    name: navbarlogo
+    label: Navbar Logo
     fields:
+    - type: file
+      name: image
+      label: Logo image
+    - type: text
+      name: link
+      label: Logo link
+  - type: field_group
+    name: font
+    label: Font family
+    fields:
+    - type: text
+      name: name
+      label: Font family name
+    - type: list
+      name: sizes
+      label: Font weights
+  - type: field_group
+    name: hero
+    label: Hero Section
+    fields:
+    - type: text
+      name: title
+      label: Title
+    - type: text
+      name: subtitle
+      label: Subtitle
+    - type: text
+      name: buttontext
+      label: Button Text
+    - type: text
+      name: buttonlink
+      label: Button Link
+    - type: file
+      name: image
+      label: Image
+    - type: image_gallery
+      name: clientlogos
+      label: Client Logos
+  - type: field_group_list
+    name: navbar
+    label: Navbar
+    fields:
+    - type: text
+      name: title
+      label: Title
+      config:
+        required: true
+    - type: text
+      name: url
+      label: URL
+    - type: field_group_list
+      name: sublinks
+      label: Dropdown Sublinks
+      fields:
+      - type: text
+        name: title
+        label: Title
+        config:
+          required: true
+      - type: text
+        name: url
+        label: URL
+    - type: boolean
+      name: button
+      label: Button
+  - type: field_group
+    name: section1
+    label: First Section
+    fields:
+    - type: text
+      name: title
+      label: Title
+    - type: text
+      name: subtitle
+      label: Subtitle
+    - type: field_group_list
+      name: tiles
+      label: Tiles
+      fields:
+      - type: text
+        name: title
+        label: Title
+        config:
+          required: true
+      - type: file
+        name: icon
+        label: Icon
+      - type: text
+        name: text
+        label: Text
+      - type: text
+        name: url
+        label: URL
+      - type: text
+        name: buttonText
+        label: Button Text
+  - type: field_group
+    name: section2
+    label: Second Section
+    fields:
+    - type: text
+      name: title
+      label: Title
+    - type: text
+      name: subtitle
+      label: Subtitle
+    - type: field_group_list
+      name: features
+      label: Features
+      fields:
+      - type: text
+        name: title
+        label: Title
+        config:
+          required: true
+      - type: text
+        name: text
+        label: Text
+      - type: file
+        name: icon
+        label: Icon
+  - type: field_group
+    name: section3
+    label: Third Section
+    fields:
+    - type: text
+      name: title
+      label: Title
+    - type: text
+      name: subtitle
+      label: Subtitle
+    - type: file
+      name: image
+      label: Image
+    - type: text
+      name: buttonText
+      label: Button Text
+    - type: text
+      name: buttonLink
+      label: Button Link
+  - type: field_group
+    name: section4
+    label: Forth Section
+    fields:
+    - type: text
+      name: title
+      label: Title
+    - type: text
+      name: subtitle
+      label: Subtitle
+    - type: field_group_list
+      name: clients
+      label: Clients
+      fields:
+      - type: text
+        name: name
+        label: Client Name
+      - type: text
+        name: quote
+        label: Quote
+      - type: text
+        name: job
+        label: Job
+      - type: file
+        name: img
+        label: Image
+  - type: boolean
+    name: section5
+    label: Fifth Section
+  - type: field_group
+    name: footer
+    label: Footer
+    fields:
+    - type: file
+      name: logo
+      label: Footer Logo
+    - type: field_group_list
+      name: socialmedia
+      label: Social Media
+      fields:
+      - type: text
+        name: link
+        label: Link
+      - type: text
+        name: icon
+        label: Icon
+    - type: boolean
+      name: bulmalogo
+      label: Bulma Logo
+    - type: field_group
+      name: quicklinks
+      label: Quick Links
+      fields:
       - type: field_group
-        name: navbarlogo
-        label: Navbar Logo
+        name: column1
+        label: First Column
         fields:
-          - type: file
-            name: image
-            label: Logo image
+        - type: text
+          name: title
+          label: Title
+        - type: field_group_list
+          name: links
+          label: Links
+          fields:
+          - type: text
+            name: text
+            label: Text
           - type: text
             name: link
-            label: Logo link
+            label: Link
       - type: field_group
-        name: font
-        label: Font family
+        name: column2
+        label: Second Column
         fields:
+        - type: text
+          name: title
+          label: Title
+        - type: field_group_list
+          name: links
+          label: Links
+          fields:
           - type: text
-            name: name
-            label: Font family name
-          - type: list
-            name: sizes
-            label: Font weights
+            name: text
+            label: Text
+          - type: text
+            name: link
+            label: Link
       - type: field_group
-        name: hero
-        label: Hero Section
+        name: column3
+        label: Third Column
         fields:
+        - type: text
+          name: title
+          label: Title
+        - type: field_group_list
+          name: links
+          label: Links
+          fields:
           - type: text
-            name: title
-            label: Title
+            name: text
+            label: Text
           - type: text
-            name: subtitle
-            label: Subtitle
-          - type: text
-            name: buttontext
-            label: Button Text
-          - type: text
-            name: buttonlink
-            label: Button Link
-          - type: file
-            name: image
-            label: Image
-          - type: image_gallery
-            name: clientlogos
-            label: Client Logos
-      - type: field_group_list
-        name: navbar
-        label: Navbar
-        fields:
-          - type: text
-            name: title
-            label: Title
-            config:
-              required: true
-          - type: text
-            name: url
-            label: URL
-          - type: field_group_list
-            name: sublinks
-            label: Dropdown Sublinks
-            fields:
-              - type: text
-                name: title
-                label: Title
-                config:
-                  required: true
-              - type: text
-                name: url
-                label: URL
-          - type: boolean
-            name: button
-            label: Button
-      - type: field_group
-        name: section1
-        label: First Section
-        fields:
-          - type: text
-            name: title
-            label: Title
-          - type: text
-            name: subtitle
-            label: Subtitle
-          - type: field_group_list
-            name: tiles
-            label: Tiles
-            fields:
-              - type: text
-                name: title
-                label: Title
-                config:
-                  required: true
-              - type: file
-                name: icon
-                label: Icon
-              - type: text
-                name: text
-                label: Text
-              - type: text
-                name: url
-                label: URL
-              - type: text
-                name: buttonText
-                label: Button Text
-      - type: field_group
-        name: section2
-        label: Second Section
-        fields:
-          - type: text
-            name: title
-            label: Title
-          - type: text
-            name: subtitle
-            label: Subtitle
-          - type: field_group_list
-            name: features
-            label: Features
-            fields:
-              - type: text
-                name: title
-                label: Title
-                config:
-                  required: true
-              - type: text
-                name: text
-                label: Text
-              - type: file
-                name: icon
-                label: Icon
-      - type: field_group
-        name: section3
-        label: Third Section
-        fields:
-          - type: text
-            name: title
-            label: Title
-          - type: text
-            name: subtitle
-            label: Subtitle
-          - type: file
-            name: image
-            label: Image
-          - type: text
-            name: buttonText
-            label: Button Text
-          - type: text
-            name: buttonLink
-            label: Button Link
-      - type: field_group
-        name: section4
-        label: Forth Section
-        fields:
-          - type: text
-            name: title
-            label: Title
-          - type: text
-            name: subtitle
-            label: Subtitle
-          - type: field_group_list
-            name: clients
-            label: Clients
-            fields:
-              - type: text
-                name: name
-                label: Client Name
-              - type: text
-                name: quote
-                label: Quote
-              - type: text
-                name: job
-                label: Job
-              - type: file
-                name: img
-                label: Image
-      - type: boolean
-        name: section5
-        label: Fifth Section
-      - type: field_group
-        name: footer
-        label: Footer
-        fields:
-          - type: file
-            name: logo
-            label: Footer Logo
-          - type: field_group_list
-            name: socialmedia
-            label: Social Media
-            fields:
-              - type: text
-                name: link
-                label: Link
-              - type: text
-                name: icon
-                label: Icon
-          - type: boolean
-            name: bulmalogo
-            label: Bulma Logo
-          - type: field_group
-            name: quicklinks
-            label: Quick Links
-            fields:
-              - type: field_group
-                name: column1
-                label: First Column
-                fields:
-                  - type: text
-                    name: title
-                    label: Title
-                  - type: field_group_list
-                    name: links
-                    label: Links
-                    fields:
-                      - type: text
-                        name: text
-                        label: Text
-                      - type: text
-                        name: link
-                        label: Link
-              - type: field_group
-                name: column2
-                label: Second Column
-                fields:
-                  - type: text
-                    name: title
-                    label: Title
-                  - type: field_group_list
-                    name: links
-                    label: Links
-                    fields:
-                      - type: text
-                        name: text
-                        label: Text
-                      - type: text
-                        name: link
-                        label: Link
-              - type: field_group
-                name: column3
-                label: Third Column
-                fields:
-                  - type: text
-                    name: title
-                    label: Title
-                  - type: field_group_list
-                    name: links
-                    label: Links
-                    fields:
-                      - type: text
-                        name: text
-                        label: Text
-                      - type: text
-                        name: link
-                        label: Link
+            name: link
+            label: Link
