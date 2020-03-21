@@ -1,0 +1,16 @@
+---
+label: Blog
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Title
+  - type: boolean
+    name: sidebar
+    label: SideBar
+  - type: text
+    name: sidebarlogo
+    label: Sidebar Logo
+pages:
+  - exampleSite/content/blog/first.md
+  - exampleSite/content/blog/second.md

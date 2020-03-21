@@ -1,0 +1,162 @@
+title: Hugo Fresh Theme
+baseURL: 'http://something-fresh.org/'
+languageCode: en-us
+theme: hugo-fresh
+params:
+  navbarlogo:
+    image: images/logos/fresh.svg
+    link: /
+  font:
+    name: Open Sans
+    sizes:
+      - '400'
+      - '600'
+  hero:
+    title: Manage. Deploy.
+    subtitle: Lorem ipsum sit dolor amet is dummy text used by the typography industry
+    buttontext: Get started
+    buttonlink: '#'
+    image: images/illustrations/worker.svg
+    clientlogos:
+      - images/logos/clients/systek.svg
+      - images/logos/clients/tribe.svg
+      - images/logos/clients/kromo.svg
+      - images/logos/clients/infinite.svg
+      - images/logos/clients/gutwork.svg
+  navbar:
+    - title: Features
+      url: /
+    - title: Pricing
+      url: /
+    - title: Dropdown
+      sublinks:
+        - title: Dropdown item
+          url: /
+        - title: Dropdown item
+          url: /
+        - title: Dropdown item
+          url: /
+    - title: Log in
+      url: /
+    - title: Sign up
+      url: /
+      button: true
+  section1:
+    title: Great power comes
+    subtitle: with great responsibility
+    tiles:
+      - title: App builder
+        icon: images/illustrations/icons/mouse-globe.svg
+        text: This is some explanatory text that is on two rows
+        url: /
+        buttonText: Free trial
+      - title: Cloud integration
+        icon: images/illustrations/icons/laptop-cloud.svg
+        text: This is some explanatory text that is on two rows
+        url: /
+        buttonText: Get started
+      - title: Add-ons & plugins
+        icon: images/illustrations/icons/plug-cloud.svg
+        text: This is some explanatory text that is on two rows
+        url: /
+        buttonText: Get started
+  section2:
+    title: You're here because you want the best
+    subtitle: And we know it
+    features:
+      - title: Powerful and unified interface
+        text: >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare
+          magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa
+          sem. Etiam finibus odio quis feugiat facilisis.
+        icon: images/illustrations/icons/laptop-globe.svg
+      - title: Cross-device synchronisation
+        text: >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare
+          magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa
+          sem. Etiam finibus odio quis feugiat facilisis.
+        icon: images/illustrations/icons/doc-sync.svg
+      - title: Nomad system
+        text: >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare
+          magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa
+          sem. Etiam finibus odio quis feugiat facilisis.
+        icon: images/illustrations/icons/mobile-feed.svg
+  section3:
+    title: One platform
+    subtitle: To rule them all
+    image: images/illustrations/mockups/app-mockup.png
+    buttonText: Get started
+    buttonLink: '#'
+  section4:
+    title: Our Clients love us!
+    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+    clients:
+      - name: Irma Walters
+        quote: >-
+          Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc
+          minim appetere te usu, ea case duis scribentur has. Duo te consequat
+          elaboraret, has quando suavitate at.
+        job: Accountant
+        img: images/illustrations/faces/1.png
+      - name: John Bradley
+        quote: >-
+          Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc
+          minim appetere te usu, ea case duis scribentur has. Duo te consequat
+          elaboraret, has quando suavitate at.
+        job: Financial Analyst
+        img: images/illustrations/faces/2.png
+      - name: Gary Blackman
+        quote: >-
+          Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc
+          minim appetere te usu, ea case duis scribentur has. Duo te consequat
+          elaboraret, has quando suavitate at.
+        job: HR Manager
+        img: images/illustrations/faces/3.png
+  section5: true
+  footer:
+    logo: images/logos/fresh-white-alt.svg
+    socialmedia:
+      - link: 'https://github.com/lucperkins/github-fresh'
+        icon: github
+      - link: 'https://dribbble.com/#'
+        icon: dribbble
+      - link: 'https://facebook.com/#'
+        icon: facebook
+      - link: 'https://twitter.com/lucperkins'
+        icon: twitter
+      - link: 'https://bitbucket.org/#'
+        icon: bitbucket
+    bulmalogo: true
+    quicklinks:
+      column1:
+        title: Product
+        links:
+          - text: Discover features
+            link: /
+          - text: Why choose our product?
+            link: /
+          - text: Compare features
+            link: /
+          - text: Our roadmap
+            link: /
+          - text: AGB
+            link: /agb
+      column2:
+        title: Docs
+        links:
+          - text: Get started
+            link: /
+          - text: User guides
+            link: /
+          - text: Admin guide
+            link: /
+          - text: Developers
+            link: /
+      column3:
+        title: Blog
+        links:
+          - text: Latest news
+            link: /blog/first
+          - text: Tech articles
+            link: /blog/second

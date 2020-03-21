@@ -1,0 +1,11 @@
+---
+label: Basic Page
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+pages:
+  - exampleSite/content/agb.md
